@@ -1,0 +1,53 @@
+=head1 NAME
+
+xmp_cp.pl - Copy xmp files to folder with original copy of images.
+
+=head1 SYNOPSIS
+
+xmp_cp.pl [options]
+
+    Options:
+        --src           source folder with xmp files
+        --dst           destination folder with images
+        --dry-run       do not copy, just show what you'll make
+        --help          brief help message
+        --man           full documentation
+
+=head1 OPTIONS
+
+=over 8
+
+=item B<< --src >>
+
+Path to the temporary folder with C<< .xmp >> files.
+
+=item B<< --dst >>
+
+Path to the original top folder of the Photos.
+
+=item B<< --dry-run >>
+
+Make a dry run, not the actual copy of the files.
+
+=item B<< --help >>
+
+Print a brief help message and exits.
+
+=item B<< --man >>
+
+Prints the manual page and exits.
+
+=back
+
+=head1 DESCRIPTION
+
+I'm using Shotwell as a Photo organizer and it put my photos in folders like
+this:
+
+YEAR/MONTH/DAY/*.CR2
+
+When I'm processing photo, I'm usually copy files to the separate folder and
+process them there. But Adobe Camer Raw, leaves C<< .xmp >> files and I want to
+store them for the history in the folder where the actual photo present. So
+this programs helps copy C<< .xmp >> files back to the original folder.
+
